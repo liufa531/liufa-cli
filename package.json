@@ -9,15 +9,16 @@
   "directories": {
     "lib": "lib"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "semantic-release"
+  },
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/liufa-cli/liufa-cli.git"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "url": "https://github.com/liufa531/liufa-cli.git"
   },
   "keywords": [
     "cli",
@@ -30,5 +31,10 @@
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "inquirer": "^8.2.0"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "semantic-release": "^24.2.0"
   }
 }
