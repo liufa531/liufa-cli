@@ -1,0 +1,22 @@
+{
+  "name": "my-web-cli",
+  "version": "1.2.3",
+  "description": "A CLI tool for creating web projects",
+  "main": "bin/liufa-cli.js",
+  "bin": {
+    "liufa-cli": "bin/liufa-cli.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["cli", "web", "project"],
+  "author": "liufa",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0"
+  }
+}
