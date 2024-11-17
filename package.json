@@ -9,14 +9,26 @@
   "directories": {
     "lib": "lib"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liufa-cli/liufa-cli.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["cli", "web", "project"],
+  "keywords": [
+    "cli",
+    "web",
+    "project"
+  ],
   "author": "liufa",
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0",
-    "fs-extra": "^11.2.0"
+    "fs-extra": "^11.2.0",
+    "inquirer": "^8.2.0"
   }
 }

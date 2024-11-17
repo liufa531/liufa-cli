@@ -2,15 +2,15 @@
 const { Command } = require('commander');
 const { create } = require('../lib/commands/create');
 const packageJson = require('../package.json');
-console.log(packageJson);
 const program = new Command();
 
 program
   .version(packageJson.version)
   .command('create <app-name>')
   .option('-t, --template <template>', 'Choose a template to use', 'default-template') // 默认模板为 default-template
-  // .description('Create a new project')
-  .action(async(appName) => {
+  .description('Create a new project')
+  .action(async(appName, options) => {
+    console.log('options:', options);
     try {
       await create(appName);
     } catch (error) {
@@ -18,4 +18,10 @@ program
     }
   });
 
+program.on('--help', () => {
+  console.log('');
+  console.log('Examples:');
+  console.log('');
+  console.log('$ liufa-cli create my-project');
+});
 program.parse(process.argv);
