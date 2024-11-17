@@ -4,7 +4,7 @@
   "description": "A CLI tool for creating web projects",
   "main": "dist/bin/liufa-cli.js",
   "bin": {
-    "liufa-cli": "bin/liufa-cli.js"
+    "liufa-cli": "dist/bin/liufa-cli.js"
   },
   "directories": {
     "lib": "lib"
