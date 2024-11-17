@@ -1,6 +1,6 @@
 {
-  "name": "my-web-cli",
-  "version": "1.2.3",
+  "name": "liufa-cli",
+  "version": "1.0.0",
   "description": "A CLI tool for creating web projects",
   "main": "bin/liufa-cli.js",
   "bin": {
