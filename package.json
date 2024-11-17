@@ -2,7 +2,7 @@
   "name": "liufa-cli",
   "version": "1.1.1",
   "description": "A CLI tool for creating web projects",
-  "main": "bin/liufa-cli.js",
+  "main": "dist/bin/liufa-cli.js",
   "bin": {
     "liufa-cli": "bin/liufa-cli.js"
   },
@@ -11,8 +11,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "semantic-release"
+    "release": "semantic-release",
+    "build": "node build.js"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "publishConfig": {
     "registry": "https://registry.npmjs.org"
   },
@@ -29,12 +33,17 @@
   "license": "ISC",
   "dependencies": {
     "commander": "^12.1.0",
-    "fs-extra": "^11.2.0",
     "inquirer": "^8.2.0"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-json": "^6.1.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
+    "rollup": "^2.59.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
     "semantic-release": "^24.2.0"
   }
 }
