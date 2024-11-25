@@ -116,7 +116,7 @@ exec(`rm -rf ${outputFolder}`);
 const fileNamesToCopy = [
   'package.json',
   'react-template',
-  'templates',
+  'template',
   'bin'
 ]
 function copyFilesToOutput() {
